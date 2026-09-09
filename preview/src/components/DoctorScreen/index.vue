@@ -7,17 +7,13 @@
           <div class="logo">
             <img src="@/assets/czoa/logo.png" alt="logo" />
           </div>
-          <div class="header-title">医保综合服务门户</div>
-          <span class="header-divider"></span>
-          <div class="nav">
-            <span class="nav-icon"><i></i><i></i><i></i><i></i></span>
-            医生一屏看
-          </div>
+          <div class="header-title">医生一屏看</div>
         </div>
         <div class="header-right">
+          <a class="back-portal" @click="goBack">&lt; 返回工作台</a>
           <div class="user-info">
             <a-button type="primary" shape="circle" icon="user" size="default"></a-button>
-            <span class="user-name">张三 · 市中心人民医院 · 心血管内科</span>
+            <span class="user-name">张三</span>
           </div>
         </div>
       </div>
@@ -201,6 +197,11 @@ export default {
       ]
     }
   },
+  methods: {
+    goBack() {
+      location.href = '/'
+    }
+  }
 }
 </script>
 
@@ -254,41 +255,22 @@ export default {
         font-size: 18px;
         font-weight: 600;
       }
-
-      .header-divider {
-        width: 1px;
-        height: 18px;
-        background: #d9d9d9;
-        margin: 0 14px;
-      }
-
-      .nav {
-        display: flex;
-        align-items: center;
-        color: #1688ee;
-        font-weight: 600;
-        font-size: 15px;
-      }
-
-      .nav-icon {
-        width: 15px;
-        height: 15px;
-        display: inline-grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2px;
-        margin-right: 8px;
-
-        i {
-          background: #1688ee;
-          border-radius: 2px;
-        }
-      }
     }
 
     .header-right {
       display: flex;
       align-items: center;
       gap: 24px;
+
+      .back-portal {
+        font-size: 14px;
+        color: rgba(19, 114, 209, 1);
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
 
       .user-info {
         display: flex;
@@ -330,9 +312,10 @@ export default {
 
 /* 容器 */
 .container {
-  max-width: 1660px;
+  width: 90%;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 18px 36px 30px;
+  padding: 18px 0 30px;
 }
 
 .grid {
@@ -789,7 +772,7 @@ export default {
   }
 
   .container {
-    padding: 15px;
+    padding: 15px 0;
   }
 
   .metrics {

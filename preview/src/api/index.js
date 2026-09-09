@@ -5,10 +5,10 @@ import imgResident from '@/assets/czoa/居民影像.png'
 import imgResource from '@/assets/czoa/数据资源.png'
 
 const permissionsList = [
-  { pm_code: 'DCMP', pm_name: '患者一屏看', pm_des: '多源健康数据聚合，一屏纵览全息医疗档案。', pm_img: imgCloud, pm_url: 'https://doctorprotal-mvp.tssz.qzz.io/' },
+  { pm_code: 'DCMP', pm_name: '患者一屏看', pm_des: '多源健康数据聚合，一屏纵览全息医疗档案。', pm_img: imgCloud, pm_url: 'https://doctorprotal-mvp.tssz.qzz.io/?view=overview' },
   { pm_code: 'JG', pm_name: '医生一屏看', pm_des: '提供阳光数据、阳光政策、阳光应用板块，提供医师全量业务数据查询、最新政策规则调阅、AI智能能力。', pm_img: imgMonitor, pm_url: '/jg' },
   { pm_code: 'JCXXCX', pm_name: '两定机构医疗保障信息平台(常州)', pm_des: '面向常州定点医疗机构与定点零售药店，提供医保协议管理、费用结算、考核评价等综合信息服务。', pm_img: imgService, pm_url: '/jcxxcx' },
-  { pm_code: 'DRGRZ', pm_name: '医保人工智能服务平台', pm_des: '面向常州市定点医药机构，提供多云大模型与AI智能体服务', pm_img: imgResource, pm_url: '/drgrz' }
+  { pm_code: 'DRGRZ', pm_name: '医保人工智能服务平台', pm_des: '面向常州市定点医药机构，提供多云大模型与AI智能体服务', pm_img: imgResource, pm_url: 'https://agentoperation.tssz.qzz.io/#/terminal-user?view=ai-workbench' }
 ]
 
 export function getWorkbenchUserInfo() {
