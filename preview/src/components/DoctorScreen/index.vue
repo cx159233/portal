@@ -20,8 +20,15 @@
     </div>
 
     <!-- 横幅 -->
-    <section class="hero image-hero">
-      <img src="@/assets/doctor/banner.png" alt="banner" />
+    <section class="hero">
+      <img class="banner-img" src="@/assets/doctor/banner.png" alt="banner" />
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="hero-tag"><a-icon type="audit" />合规透明 · 精准赋能 · 服务监管</span>
+          <h1>医生一屏看</h1>
+          <p>围绕医师执业全周期医保需求，打造阳光数据、阳光政策、阳光应用三大核心板块，将医保侧沉淀的全量业务数据、最新政策规则、AI 智能能力统一集成——医保业务全透明展示、政策精准定向推送、智能工具随取随用。</p>
+        </div>
+      </div>
     </section>
 
     <div class="container">
@@ -289,25 +296,71 @@ export default {
   }
 }
 
-/* 横幅 - 图片背景 */
+/* 横幅 - banner 原图满宽不裁剪，文字覆盖其上 */
 .hero {
   position: relative;
-  overflow: hidden;
+}
 
-  &.image-hero {
-    height: auto !important;
-    padding: 0 !important;
-    background: none !important;
-  }
+.banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    min-height: 176px;
-    object-fit: cover;
-    object-position: center top;
+.hero-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.hero-copy {
+  width: 90%;
+  max-width: 1800px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 3px 12px;
+  border: 1px solid rgba(22, 136, 238, 0.4);
+  border-radius: 4px;
+  background: transparent;
+  color: #1474c9;
+  font-size: clamp(11px, 0.7vw, 12px);
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+
+  ::v-deep .anticon {
+    margin-right: 6px;
+    font-size: 13px;
   }
+}
+
+.hero h1 {
+  margin: clamp(5px, 0.6vw, 9px) 0 clamp(3px, 0.5vw, 7px);
+  font-size: clamp(22px, 2.2vw, 42px);
+  line-height: 1.05;
+  color: #0d3a66;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.hero p {
+  margin: 0;
+  max-width: clamp(680px, 40vw, 980px);
+  color: #40628a;
+  line-height: 1.7;
+  font-size: clamp(12px, 0.85vw, 13.5px);
 }
 
 /* 容器 */
@@ -762,15 +815,6 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .topbar {
-    padding: 0 20px;
-  }
-
-  .hero img {
-    min-height: 130px;
-    object-fit: cover;
-  }
-
   .container {
     padding: 15px 0;
   }
