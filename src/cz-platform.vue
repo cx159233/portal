@@ -10,7 +10,7 @@
               alt="logo"
             />
           </div>
-          <div class="header-title">医保综合服务门户</div>
+          <div class="header-title">医保综合服务平台</div>
         </div>
         <div class="header-right">
           <div class="org-name ">
@@ -46,9 +46,9 @@
       <div class="banner-content">
         <div class="banner-left">
           <div class="banner-decoration"></div>
-          <h1 class="banner-title">医保综合服务门户</h1>
+          <h1 class="banner-title">医保综合服务平台</h1>
           <p class="banner-description">
-            依托医保数字化核心业务枢纽，集统一认证、智能鉴权与“一网通办”于一体的综合服务平台。
+            依托医保数字化核心业务枢纽，集统一认证、智能鉴权与“数智医保”于一体的综合服务平台。
           </p>
         </div>
         <div class="banner-right">
@@ -103,7 +103,7 @@
                   alt=""
                 >
               </div>
-              <div class="step-name">一网通办</div>
+              <div class="step-name">高效触达</div>
             </div>
             <div class="step-arrow">
               <div class="triangle one "></div>
@@ -230,7 +230,7 @@ export default {
       ],
       noticeList: [
         { type: '政策文件', tagClass: 'policy', title: '关于开展2026年度医保影像数据质量专项检查的通知', content: '定于2026年9月至11月对全市定点医药机构开展影像数据质量专项检查。', date: '2026-09-07' },
-        { type: '系统公告', tagClass: 'system', title: '影像云平台9月15日凌晨升级维护公告', content: '平台将于9月15日0:00-6:00进行升级维护，期间暂停影像调阅服务。', date: '2026-09-06' },
+        { type: '系统公告', tagClass: 'system', title: '医保影像云9月15日凌晨升级维护公告', content: '平台将于9月15日0:00-6:00进行升级维护，期间暂停影像调阅服务。', date: '2026-09-06' },
         { type: '政策文件', tagClass: 'policy', title: '关于印发医保影像检查结果互认实施细则的通知', content: '明确检查结果互认的范围、条件与流程，减轻群众重复检查负担。', date: '2026-09-05' },
         { type: '系统公告', tagClass: 'system', title: '数据上云监测看板新增质控指标上线说明', content: '看板新增完整率、一致率等质控指标，机构可在线查看质控详情。', date: '2026-09-04' },
         { type: '操作指引', tagClass: 'guide', title: '居民影像报告线上调阅功能操作指引（医疗机构版）', content: '介绍医疗机构影像报告线上调阅的入口、操作步骤与常见问题处理。', date: '2026-09-03' },

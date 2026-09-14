@@ -10,7 +10,7 @@
               alt="logo"
             />
           </div>
-          <div class="header-title">两定机构医疗保障信息平台(常州)</div>
+          <div class="header-title">两定机构医疗保障信息平台</div>
         </div>
         <div class="header-right">
           <div class="org-name "></div>
@@ -30,7 +30,7 @@
           <div class="banner-decoration"></div>
           <h1 class="banner-title">两定机构医疗保障信息平台</h1>
           <p class="banner-description">
-            面向常州市定点医疗机构与定点零售药店，提供医保协议管理、费用结算、考核评价等综合信息服务。
+            面向定点医疗机构与定点零售药店，提供医保协议管理、费用结算、考核评价等综合信息服务。
           </p>
         </div>
       </div>
